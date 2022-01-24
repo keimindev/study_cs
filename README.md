@@ -1,8 +1,7 @@
 # 📖 Table of Contents
 
-- 개발상식
-- Frontend
-  - Javascript
+- [개발상식](https://github.com/keimindev/study_for_beginner/tree/main/contents/development)
+- [Frontend](https://github.com/keimindev/study_for_beginner/tree/main/contents/frontend)
 
 <br></br>
 <br></br>
