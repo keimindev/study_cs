@@ -5,6 +5,7 @@
 - [브라우저 동작 원리](#브라우저-동작-원리)
 - [Virtual DOM이란? 썼을 때 장점](#Virtual-DOM)
 - [Javascript의 this](#Javascript의-this)
+- [Javascript의 prototype](#Javascript의-prototype)
 - [Javascript event](#Javascript-event)
   (이벤트 캡처링 & 버블링, 이벤트 위임방식)
 - [Javascript 비동기 처리](#Javascript-비동기-처리)
@@ -118,6 +119,28 @@ javascript에서 함수의 this의 값은 함수를 호출하는 방법에 의�
   [자세히 보러가기]
 
 this는 함수 호출 방식에 따라서 동적으로 결정된다.
+<br></br>
+<br></br>
+
+# Javascript의 prototype
+
+자바스크립트의 모든 객체는 프로토타입이라는 객체를 가지고 있습니다. 모든 객체는 그들의 프로토 타입으로부터 프로퍼티와 메소드를 상속받습니다. 이처럼 자바스크립트의 모든 객체는 최소한 하나 이상의 다른 객체로부터 상속을 받으며, 이 때 상속되는 정보를 제공하는 객체를 프로토타입이라고 합니다.
+
+- 프로토타입의 생성 <br/>
+  프로토타입을 생성하는 가장 기본적인 방법은 객체 생성자 함수(object constructor function)를 작성하는 것입니다. 생성자 함수를 작성하고 new 연산자를 사용해 객체를 생성하면, 같은 프로토타입을 가지는 객체들을 생성할 수 있습니다. <br/>
+
+        function Dog(color, name, age) {
+          // 개에 관한 생성자 함수를 작성함.
+
+         this.color = color;          // 색에 관한 프로퍼티
+         this.name = name;            // 이름에 관한 프로퍼티
+         this.age = age;              // 나이에 관한 프로퍼티
+         }
+
+         var myDog = new Dog("흰색", "마루", 1); // 이 객체는 Dog라는 프로토타입을 가짐.
+
+         document.write("우리 집 강아지는 " + myDog.name + "라는 이름의 " + myDog.color + " 털이 매력적인 강아지입니다.");
+
 <br></br>
 <br></br>
 
