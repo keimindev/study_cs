@@ -2,8 +2,8 @@
 
 - [react 클래스형과 함수형의 차이는?](#react-클래스형과-함수형의-차이점)
 - [라이브러리와 프레임워크의 차이점](#라이브러리와-프레임워크의-차이점은)
-- [Vue.js와 React.js의 차이점](#Vue.js와-React.js의-차이점)
-- [Angular와 React.js의 차이점](#Angular와-React.js의-차이점)
+- [Vue와 React의 차이점](#Vue와-React의-차이점)
+- [Angular와 React의 차이점](#Angular와-React의-차이점)
 - [ContextAPI](#ContextAPI)
 - [Redux가 무엇인가요?](#Redux가-무엇인가요)
 
@@ -50,7 +50,7 @@
 <br></br>
 <br></br>
 
-# Vue.js와 React.js의 차이점
+# Vue와 React의 차이점
 
 Vue는 오픈소스 자바스크립트 프레임워크고 React는 라이브러리다.
 공톰점이 있다면 둘다 컴포넌트 기반에 virtual dom 방식이라 가볍고 빠르다는 점입니다.
@@ -63,7 +63,7 @@ Vue는 오픈소스 자바스크립트 프레임워크고 React는 라이브러�
 <br></br>
 <br></br>
 
-# Angular와 React.js의 차이점
+# Angular와 React의 차이점
 
 Angular 는 타입스크립트 기반 오픈소스 프레임워크이고 React는 라이브러리다.
 
@@ -78,7 +78,9 @@ Angular 는 타입스크립트 기반 오픈소스 프레임워크이고 React�
 
 # ContextAPI
 
-리액트 내에서 전역적으로 상태를 관리하기 위한 기능입니다. 3-4개 이상의 컴포넌트를 거쳐서 데이터를 전달해야하는 상황이 발생하면 번거로울 수 있기 때문에 ContextAPI를 써서 관리할 수 있습니다.
+리액트 내에서 전역적으로 상태를 관리하기 위한 기능입니다. 리액트는 props와 state로 데이터 전달과 관리를 합니다. 수로 상위에서 하위로 데이터가 흘러가지만 때로는 하위에서 상위로 올라가야 할 때도 있습니다. 이런 문제를 해결하기 위해서 context 라는 것이 있습니다. <br/>
+부모 컴포넌트로부터 자식 컴포넌트로 전달되는 데이터의 흐름과 상관없이 전역적인 데이터를 다룰 때 사용합니다. context에 저장된 데이터를 사용하기 위해서 contextAPI를 이용해야합니다. Context의 Provider를 사용하여 데이터를 제공해야 하며, 데이터를 사용하려는 컴포넌트에서 Context의 Consumer를 사용하여 실제로 데이터를 사용합니다.
+
 <br></br>
 <br></br>
 
